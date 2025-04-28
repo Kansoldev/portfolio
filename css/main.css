@@ -192,18 +192,14 @@ body {
   top: 5px;
 }
 
-.menu-btn span::after {
-  bottom: 5px;
-}
-
 /* Header navigation */
 .off-canvas-menu {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #000;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 9999;
   opacity: 0;
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
