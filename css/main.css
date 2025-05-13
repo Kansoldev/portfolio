@@ -323,6 +323,20 @@ nav.main-menu ul li a:hover {
   }
 }
 
+.hero-image {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .hero-image {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: -100px;
+    width: 500px;
+  }
+}
+
 .resume-btn {
   align-self: self-start;
   background-color: #283655;
@@ -366,7 +380,6 @@ nav.main-menu ul li a:hover {
 
 .mouse-wheel {
   display: block;
-  animation: 1.6s ease infinite wheel-down;
 }
 
 .mouse-wheel::after {
@@ -374,26 +387,26 @@ nav.main-menu ul li a:hover {
   font-family: "FontAwesome";
   font-weight: 700;
   display: inline-block;
+  margin-top: 13px;
   line-height: 1;
   font-size: 1.1rem;
   color: #b3cde0;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  animation: bounce 1s infinite;
 }
 
-@keyframes wheel-down {
-  0% {
-    opacity: 0;
+@keyframes bounce {
+  0%,
+  to {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
 
-  30% {
-    opacity: 1;
-  }
-
-  100% {
-    margin-top: 20px;
-    opacity: 0;
+  50% {
+    transform: translateY(10%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
 /* ==== Header CSS End ==== */
