@@ -233,9 +233,9 @@ nav.main-menu ul li {
 nav.main-menu ul li a {
   color: #fff;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: uppercase;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
