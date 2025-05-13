@@ -439,15 +439,9 @@ nav.main-menu ul li a:hover {
 /* Common CSS End */
 
 /* ==== About Area CSS Start ==== */
-.about-img {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-}
-
-@media (min-width: 480px) {
-  .about-img {
-    width: 400px;
+@media (min-width: 1100px) {
+  #about-area img {
+    display: none;
   }
 }
 
