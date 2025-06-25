@@ -103,15 +103,6 @@ body {
   overflow-x: hidden;
 }
 
-/* BOOTSTRAP RESETS */
-.text-primary {
-  color: #283655 !important;
-}
-
-.text-secondary {
-  color: #b3cde0 !important;
-}
-
 .btn-primary {
   background-color: #283655 !important;
   border: 0;
@@ -120,8 +111,6 @@ body {
 .btn-primary:hover {
   background-color: #283655f6 !important;
 }
-
-/* BOOTSTRAP RESETS END ==== */
 
 /* HEADER */
 .header-top {
