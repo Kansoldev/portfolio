@@ -64,11 +64,6 @@
       $(".off-canvas-menu").removeClass("active");
     });
 
-    // Parallax Effect
-    $(".parallax-header").parallax({
-      imageSrc: "img/bg.jpg",
-    });
-
     // WOW js
     new WOW().init({
       mobile: false,
