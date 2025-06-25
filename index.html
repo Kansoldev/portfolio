@@ -120,34 +120,27 @@
     </aside>
 
     <main>
-      <section class="hero-area parallax-header">
-        <div class="wow fadeInUp">
-          <div class="container">
-            <div class="hero-content">
-              <h2>Hi!</h2>
-              <h3><span>I'm</span> Oyinkansola</h3>
+      <section class="hero-area">
+        <div class="container wow fadeInUp h-100">
+          <section class="hero-content">
+            <div class="hero-description text-white">
+              <span>Hi! 👋</span>
+              <h1>I'm Oyinkansola</h1>
+              <p class="mt-1">A Software Engineer</p>
 
-              <p class="mt-1" style="font-size: 20px; letter-spacing: 1.4px">
-                A Front End Developer
-              </p>
-
-              <a href="./resume.pdf" class="btn resume-btn mt-4" download
-                >View My Resume</a
+              <a href="#about-area" class="btn btn-primary btn-lg mt-4"
+                >Find Out More</a
               >
-
-              <img
-                src="img/profile.png"
-                class="hero-image"
-                alt="Image of Oyinkansola"
-              />
             </div>
 
-            <a href="#about-area" class="mouse">
-              <span class="mouse-icon">
-                <span class="mouse-wheel"></span>
-              </span>
-            </a>
-          </div>
+            <div class="hero-image">
+              <img
+                src="img/profile.png"
+                class="img-fluid"
+                alt="An Image of Oyinkansola"
+              />
+            </div>
+          </section>
         </div>
       </section>
 
@@ -415,13 +408,18 @@
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN1D23K0H9"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CN1D23K0H9"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-CN1D23K0H9');
+      gtag("config", "G-CN1D23K0H9");
     </script>
   </body>
 </html>

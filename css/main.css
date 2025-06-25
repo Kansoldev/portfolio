@@ -251,14 +251,23 @@ nav.main-menu ul li a:hover {
 /* HEADER END */
 
 .hero-area {
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
+  height: 100vh;
+}
+
+@media (min-width: 1200px) {
+  .hero-area {
+    height: auto;
+  }
 }
 
 .hero-area::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.75);
   position: absolute;
   top: 0;
   right: 0;
@@ -268,140 +277,54 @@ nav.main-menu ul li a:hover {
 
 .hero-content {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
-  z-index: 2;
-  color: #fff;
-  height: 100vh;
+  z-index: 1;
+  padding-top: 70px;
+  height: inherit;
 }
 
-.hero-content h2 {
-  font-size: 5rem;
-  line-height: 1;
-  margin-left: -8px;
+.hero-content h1 {
+  font-size: 3rem;
 }
 
 @media (min-width: 768px) {
-  .hero-content h2 {
-    font-size: 7.5rem;
+  .hero-content h1 {
+    font-size: 4.3rem;
   }
 }
 
-.hero-content h3 {
-  font-size: 2.1875rem;
-}
-
-@media (min-width: 600px) {
-  .hero-content h3 {
-    font-size: 3.125rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .hero-content h3 {
-    font-size: 5.25rem;
+@media (min-width: 1024px) {
+  .hero-content h1 {
+    font-size: 5.3rem;
   }
 }
 
 .hero-content p {
   font-size: 1.25rem;
-  font-weight: 400;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .hero-content p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
+}
+
+.hero-content span {
+  font-family: cursive;
+  font-size: 1.2rem;
 }
 
 .hero-image {
   display: none;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .hero-image {
     display: block;
-    position: absolute;
-    top: 70px;
-    right: -100px;
-    width: 500px;
   }
 }
-
-.resume-btn {
-  align-self: self-start;
-  background-color: #283655;
-  border: 0;
-  color: #fff;
-  display: inline-block;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  padding: 14px 22px;
-  text-align: center;
-}
-
-.resume-btn:hover {
-  background-color: #283655c9;
-  color: #fff;
-}
-
-.mouse {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  z-index: 9;
-  transform: translateX(-50%);
-}
-
-.mouse-icon {
-  border: 2px solid #b3cde0;
-  border-radius: 15px;
-  cursor: pointer;
-  display: block;
-  height: 45px;
-  width: 25px;
-  text-align: center;
-  transition: 0.3s all ease-in-out;
-}
-
-.mouse-icon:hover {
-  border: 2px solid #fff;
-}
-
-.mouse-wheel {
-  display: block;
-}
-
-.mouse-wheel::after {
-  content: "\f107";
-  font-family: "FontAwesome";
-  font-weight: 700;
-  display: inline-block;
-  margin-top: 13px;
-  line-height: 1;
-  font-size: 1.1rem;
-  color: #b3cde0;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  animation: bounce 1s infinite;
-}
-
-@keyframes bounce {
-  0%,
-  to {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-
-  50% {
-    transform: translateY(10%);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
-}
-/* ==== Header CSS End ==== */
 
 /* Common CSS */
 .section-padding {
